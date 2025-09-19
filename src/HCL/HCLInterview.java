@@ -17,9 +17,9 @@ public class HCLInterview {
 
         System.out.println(map);
 
-       // map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
+        map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
 
-       // map.entrySet().stream().sorted(Map.Entry.<String , Integer>comparingByValue().reversed()).forEach(System.out::println);
+        map.entrySet().stream().sorted(Map.Entry.<String , Integer>comparingByValue().reversed()).forEach(System.out::println);
 
 
 
@@ -31,7 +31,7 @@ public class HCLInterview {
         String Strt = str.chars().filter(Character::isAlphabetic).mapToObj(c->(char)c).distinct().map(String::valueOf)
                 .collect(Collectors.joining());
 
-       // System.out.println(digit);
+        System.out.println(digit);
        // System.out.println(Strt);
 
        String p= str.chars().filter(Character::isAlphabetic).distinct().mapToObj(c->String.valueOf((char)c)).collect(Collectors.joining());
